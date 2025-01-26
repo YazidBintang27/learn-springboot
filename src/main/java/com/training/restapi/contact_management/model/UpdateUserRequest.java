@@ -9,11 +9,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class WebResponse<T> {
+public class UpdateUserRequest {
 
-    private T data;
+    private String name;
 
-    private String errors;
-
-    private PagingResponse paging;
+    private String password;
 }
