@@ -45,6 +45,8 @@ public class ContactServiceImpl implements ContactService {
         contact.setPhone(contactRequest.getPhone());
         contact.setUser(user);
 
+        contactRepository.save(contact);
+
         return toContactResponse(contact);
     }
 
